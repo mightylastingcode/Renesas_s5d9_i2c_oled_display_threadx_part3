@@ -9,13 +9,14 @@ Display the temperature graphically over time on OLED display.
 
 In this firmware, we will have three threads.
 
-File Description:
+File Description in the source_code folder
 1.  hal_entry.c  (empty function)
 2.  system_thread_entry.c/h  (Setup LED for normal operation and warning purpose)
 3.  sht31_thread.c/h  (SHT31.c/h + all the SHT31 related code in the part 2 hal_entry.c + i2c.c)
 3.  oled_ssd1306_thread.c/h  (all the oled ssd1306 related code in the part 2 hal_entry.c)
 4.  ssd1306_oled.c/h (unchanged except for the iic driver name from part 2)
 
+S5D9_I2C_SHT31_OLED_TX_UARTBUS_v4.7z is the project file in zip format.  Use 7-Zip to unzip the file.
 
 Datasheet:
 SENSIRION SHT3x-DIS 314010179_SMD Temperature and Humidity Sensor Datasheets.pdf (Temperature sensor datasheet)
